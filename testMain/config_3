@@ -1,0 +1,42 @@
+py "--------------------------------------------------------"
+py "Configuring network"
+py "--------------------------------------------------------"
+py "Assign IP address to hosts"
+h1 ifconfig h1-eth0 195.0.0.1/8
+h2 ifconfig h2-eth0 195.0.0.2/8
+h3 ifconfig h3-eth0 128.128.0.1/12
+h4 ifconfig h4-eth0 154.128.0.1/16
+h5 ifconfig h5-eth0 197.160.0.1/24
+h6 ifconfig h6-eth0 192.168.0.1/24
+h7 ifconfig h7-eth0 192.169.0.1/24
+h8 ifconfig h8-eth0 192.170.0.1/24
+h9 ifconfig h9-eth0 192.170.1.1/24
+h10 ifconfig h10-eth0 192.170.1.2/24
+h11 ifconfig h11-eth0 162.50.0.1/24
+h12 ifconfig h12-eth0 162.50.0.2/24
+h13 ifconfig h13-eth0 129.169.0.1/24
+h14 ifconfig h14-eth0 131.111.0.1/24
+h15 ifconfig h15-eth0 172.175.0.1/24
+
+
+h1 route add default gw 195.0.0.254
+h2 route add default gw 195.0.0.254
+h3 route add default gw 128.128.0.254
+h4 route add default gw 154.128.0.254
+h5 route add default gw 197.160.0.254
+h6 route add default gw 192.168.0.254
+h7 route add default gw 192.169.0.254
+h8 route add default gw 192.170.0.254
+h9 route add default gw 192.170.1.254
+h10 route add default gw 192.170.1.254
+h11 route add default gw 162.50.0.254
+h12 route add default gw 162.50.0.254
+h13 route add default gw 129.169.0.254
+h14 route add default gw 131.111.0.254
+h15 route add default gw 172.175.0.254
+
+
+
+
+
+
